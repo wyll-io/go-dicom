@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/grailbio/go-dicom/dicomio"
 	"github.com/stretchr/testify/require"
+	"github.com/wyll-io/go-dicom/dicomio"
 )
 
 func TestBasic(t *testing.T) {

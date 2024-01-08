@@ -3,8 +3,8 @@ package dicomuid_test
 import (
 	"testing"
 
-	"github.com/grailbio/go-dicom/dicomuid"
 	"github.com/stretchr/testify/assert"
+	"github.com/wyll-io/go-dicom/dicomuid"
 )
 
 func TestStandardUIDs(t *testing.T) {

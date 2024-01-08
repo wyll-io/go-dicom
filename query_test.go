@@ -3,9 +3,9 @@ package dicom_test
 import (
 	"testing"
 
-	"github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomtag"
 	"github.com/stretchr/testify/assert"
+	"github.com/wyll-io/go-dicom"
+	"github.com/wyll-io/go-dicom/dicomtag"
 )
 
 func TestParse0(t *testing.T) {

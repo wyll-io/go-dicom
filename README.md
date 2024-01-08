@@ -1,7 +1,6 @@
--------
+---
 
 **This project is no longer maintained.**
-
 
 Please see [suyashkumar/dicom](https://github.com/suyashkumar/dicom/) for an
 alternative, or consider one of the forks of this project.
@@ -10,13 +9,11 @@ This project was originally a fork of
 [gillesdemey/go-dicom](https://github.com/gillesdemey/go-dicom). with some
 fixes which have since been incorporated in the alternative referenced above.
 
--------
+---
 
-[![GoDoc](https://godoc.org/github.com/grailbio/go-dicom?status.svg)](https://godoc.org/github.com/grailbio/go-dicom) [![Build Status](https://travis-ci.org/grailbio/go-dicom.svg?branch=master)](https://travis-ci.org/grailbio/go-dicom.svg?branch=master)
+[![GoDoc](https://godoc.org/github.com/wyll-io/go-dicom?status.svg)](https://godoc.org/github.com/wyll-io/go-dicom) [![Build Status](https://travis-ci.org/grailbio/go-dicom.svg?branch=master)](https://travis-ci.org/grailbio/go-dicom.svg?branch=master)
 
 # DICOM parser in Go
-
-
 
 This is a fork of github.com/gillesdemey/go-dicom. Changes are:
 
@@ -28,6 +25,7 @@ This is a fork of github.com/gillesdemey/go-dicom. Changes are:
 - Adds fuzz tests and tests that ensure compatibility with pydicom.
 
 TODO:
+
 - Implement mixed-coding-system files more properly. We currently botch
   patient-name (PN) elements that mixes coding systems.
 
@@ -35,10 +33,8 @@ TODO:
 
 - Native pixeldata format. It'll be parsed as just []byte.
 
-
 See doc.go for usage. dicomutil contains a sample program that dumps DICOM
 elements in a file.
-
 
 ### Acknowledgements
 

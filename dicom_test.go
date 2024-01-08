@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	dicom "github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomtag"
-	"github.com/grailbio/go-dicom/dicomuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	dicom "github.com/wyll-io/go-dicom"
+	"github.com/wyll-io/go-dicom/dicomtag"
+	"github.com/wyll-io/go-dicom/dicomuid"
 )
 
 func mustReadFile(path string, options dicom.ReadOptions) *dicom.DataSet {

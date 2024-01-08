@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/grailbio/go-dicom"
+	"github.com/wyll-io/go-dicom"
 )
 
 func TestParseDICOMDIR(t *testing.T) {

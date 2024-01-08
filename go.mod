@@ -4,7 +4,6 @@ go 1.21.5
 
 require (
 	github.com/gobwas/glob v0.0.0-20170212200151-51eb1ee00b6d
-	github.com/grailbio/go-dicom v0.0.0-20211105193521-b0e216a1c5cd
 	github.com/stretchr/testify v1.2.2
 	golang.org/x/text v0.3.0
 )

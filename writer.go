@@ -6,9 +6,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomlog"
-	"github.com/grailbio/go-dicom/dicomtag"
+	"github.com/wyll-io/go-dicom/dicomio"
+	"github.com/wyll-io/go-dicom/dicomlog"
+	"github.com/wyll-io/go-dicom/dicomtag"
 )
 
 // WriteFileHeader produces a DICOM file header. metaElems[] is be a list of
@@ -375,9 +375,9 @@ func WriteElement(e *dicomio.Encoder, elem *Element) {
 // TransferSyntax element in "ds". If ds is missing that or a few other
 // essential elements, this function returns an error.
 //
-//  ds := ... read or create dicom.Dataset ...
-//  out, err := os.Create("test.dcm")
-//  err := dicom.Write(out, ds)
+//	ds := ... read or create dicom.Dataset ...
+//	out, err := os.Create("test.dcm")
+//	err := dicom.Write(out, ds)
 func WriteDataSet(out io.Writer, ds *DataSet) error {
 	e := dicomio.NewEncoder(out, nil, dicomio.UnknownVR)
 	var metaElems []*Element
